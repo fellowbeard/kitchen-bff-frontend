@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import IndexView from "../views/IndexView.vue";
+import CreateView from "../views/CreateView.vue";
+import ShowView from "../views/ShowView.vue";
 
 const routes = [
   {
@@ -12,6 +14,16 @@ const routes = [
     path: "/recipes",
     name: "index",
     component: IndexView,
+  },
+  {
+    path: "/recipes/new",
+    name: "create",
+    component: CreateView,
+  },
+  {
+    path: "/recipes/:id",
+    name: "show",
+    component: ShowView,
   },
   {
     path: "/about",

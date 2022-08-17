@@ -5,6 +5,8 @@
     <router-link to="/about">About</router-link>
     |
     <router-link to="/recipes">All Recipes</router-link>
+    |
+    <router-link to="/recipes/new">New Recipes</router-link>
   </nav>
   <router-view />
 </template>
