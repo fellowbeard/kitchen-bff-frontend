@@ -19,6 +19,7 @@ export default {
 <template>
   <div class="recipes-show">
     <h2>{{ recipe.name }}</h2>
+    <router-link v-bind:to="`/recipes/${recipe.id}/edit`">Edit recipe</router-link>
     <router-link to="/recipes">Back to Recipes</router-link>
   </div>
 </template>
