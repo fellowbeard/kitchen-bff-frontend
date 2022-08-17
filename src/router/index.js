@@ -4,6 +4,9 @@ import IndexView from "../views/IndexView.vue";
 import CreateView from "../views/CreateView.vue";
 import ShowView from "../views/ShowView.vue";
 import UpdateView from "../views/UpdateView.vue";
+import SignupView from "../views/SignupView.vue";
+import LoginView from "../views/LoginView.vue";
+import LogoutView from "../views/LogoutView.vue";
 
 const routes = [
   {
@@ -30,6 +33,21 @@ const routes = [
     path: "/recipes/:id/edit",
     name: "edit",
     component: UpdateView,
+  },
+  {
+    path: "/recipes/signup",
+    name: "signup",
+    component: SignupView,
+  },
+  {
+    path: "/recipes/login",
+    name: "login",
+    component: LoginView,
+  },
+  {
+    path: "/recipes/logout",
+    name: "logout",
+    component: LogoutView,
   },
   {
     path: "/about",
